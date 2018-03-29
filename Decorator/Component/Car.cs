@@ -3,6 +3,7 @@
     public abstract class Car
     {
         private string description;
+        private decimal price;
 
         protected Car()
         {
@@ -18,6 +19,19 @@
             set
             {
                 this.description = value;
+            }
+        }
+
+        protected decimal Price
+        {
+            get
+            {
+                return this.price;
+            }
+
+            set
+            {
+                this.price = value;
             }
         }
 

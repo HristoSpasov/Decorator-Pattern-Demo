@@ -10,11 +10,12 @@
         public CompactCar()
         {
             this.Description = CompactCarDescription;
+            this.Price = CompactCarPrice;
         }
 
         public override decimal GetCarPrice()
         {
-            return CompactCarPrice;
+            return this.Price;
         }
 
         public override string GetDescription()
